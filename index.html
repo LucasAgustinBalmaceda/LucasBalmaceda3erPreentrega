@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Compras - Librería</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 200px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        #resultado {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Simulador de Compras - Librería</h1>
+
+    <form id="formulario">
+        <label for="cantidad_hojas_cuadriculadasx100">Cantidad de packs de hojas cuadriculadas x 100u:
+        <img src="../assets/hojascuadriculadas.png" alt="Hojas Cudriculadas" style="width: 200px; height: auto;">
+    </label>
+        <input type="number" id="cantidad_hojas_cuadriculadasx100" name="cantidad_hojas_cuadriculadasx100" value="0" min="0">
+        <br><br>
+
+        <label for="cantidad_hojas_rayadasx100">Cantidad de packs de hojas rayadas x 100u:
+        <img src="../assets/hojasrayadas.png" alt="Hojas Rayadas" style="width: 200px; height: auto;">
+    </label>
+        <input type="number" id="cantidad_hojas_rayadasx100" name="cantidad_hojas_rayadasx100" value="0" min="0">
+        <br><br>
+
+        <label for="cantidad_carpetas">Cantidad de carpetas:
+        <img src="../assets/carpetas.png" alt="Carpetas" style="width: 200px; height: auto;">
+    </label>
+        <input type="number" id="cantidad_carpetas" name="cantidad_carpetas" value="0" min="0">
+        <br><br>
+
+        <label for="cantidad_lapices">Cantidad de lápices:
+        <img src="../assets/lapices.png" alt="Lapices" style="width: 200px; height: auto;">
+    </label>
+        <input type="number" id="cantidad_lapices" name="cantidad_lapices" value="0" min="0">
+        <br><br>
+
+        <label for="cantidad_cuadernos">Cantidad de cuadernos:
+        <img src="../assets/cuadernos.png" alt="Cuadernos" style="width: 200px; height: auto;">
+    </label>
+        <input type="number" id="cantidad_cuadernos" name="cantidad_cuadernos" value="0" min="0">
+        <br><br>
+
+        <label for="cantidad_lapiceras">Cantidad de lapiceras:
+        <img src="../assets/lapiceras.png" alt="Lapiceras" style="width: 200px; height: auto;">
+    </label>
+        <input type="number" id="cantidad_lapiceras" name="cantidad_lapiceras" value="0" min="0">
+        <br><br>
+
+        <button type="button" id="calcular-total">Calcular Total</button>
+        <br><br>
+        <button type="button" id="comprar">Comprar</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
